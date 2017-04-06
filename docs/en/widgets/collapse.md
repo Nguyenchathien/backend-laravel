@@ -1,8 +1,8 @@
 # Collapse
 
-`Encore\Admin\Widgets\Collapse` class used to generate folding components:
+`CODE4FUN\Admin\Widgets\Collapse` class used to generate folding components:
 ```php
-use Encore\Admin\Widgets\Collapse;
+use CODE4FUN\Admin\Widgets\Collapse;
 
 $collapse = new Collapse();
 

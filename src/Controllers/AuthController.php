@@ -1,11 +1,11 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace CODE4FUN\Admin\Controllers;
 
-use Encore\Admin\Auth\Database\Administrator;
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Form;
-use Encore\Admin\Layout\Content;
+use CODE4FUN\Admin\Auth\Database\Administrator;
+use CODE4FUN\Admin\Facades\Admin;
+use CODE4FUN\Admin\Form;
+use CODE4FUN\Admin\Layout\Content;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Auth\Database;
+namespace CODE4FUN\Admin\Auth\Database;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -2,7 +2,7 @@
 
 `laravel-admin`已经内置了`RBAC`权限控制模块，展开左侧边栏的`Auth`，下面有用户、权限、角色三项的管理面板，权限控制的使用如下：
 ```php
-use Encore\Admin\Auth\Permission;
+use CODE4FUN\Admin\Auth\Permission;
 
 class PostController extends Controller
 {
@@ -10,10 +10,10 @@ class PostController extends Controller
     {
         // 检查权限，有create-post权限的角色可以访问
         Permission::check('create-post');
-        
+
         // 'editor', 'developer'两个角色可以访问
         Permission::allow(['editor', 'developer']);
-        
+
         // 'editor', 'developer'两个角色禁止访问
         Permission::deny(['editor', 'developer']);
     }
@@ -33,7 +33,7 @@ Route::group([
 
     $router->resource('users', UserController::class);
     ...
-    
+
 });
 
 // 禁止developer、operator两个角色访问group里面的路由
@@ -43,7 +43,7 @@ Route::group([
 
     $router->resource('users', UserController::class);
     ...
-    
+
 });
 
 // 有edit-post、create-post、delete-post三个权限的用户可以访问group里面的路由
@@ -53,7 +53,7 @@ Route::group([
 
     $router->resource('posts', PostController::class);
     ...
-    
+
 });
 ```
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Commands;
+namespace CODE4FUN\Admin\Commands;
 
 use Illuminate\Console\Command;
 

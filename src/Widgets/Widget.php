@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Widgets;
+namespace CODE4FUN\Admin\Widgets;
 
 use Illuminate\Support\Fluent;
 

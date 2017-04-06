@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Grid\Filter\Field;
+namespace CODE4FUN\Admin\Grid\Filter\Field;
 
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Grid\Filter\AbstractFilter;
+use CODE4FUN\Admin\Facades\Admin;
+use CODE4FUN\Admin\Grid\Filter\AbstractFilter;
 use Illuminate\Contracts\Support\Arrayable;
 
 class Select
@@ -165,7 +165,7 @@ $(document).on('change', ".{$this->getClass($column)}", function () {
                 text : item.$textField
             }));
         });
-        
+
         $(target).trigger('change');
     });
 });

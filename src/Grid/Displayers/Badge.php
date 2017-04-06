@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Grid\Displayers;
+namespace CODE4FUN\Admin\Grid\Displayers;
 
 use Illuminate\Contracts\Support\Arrayable;
 

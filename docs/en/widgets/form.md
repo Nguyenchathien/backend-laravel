@@ -1,6 +1,6 @@
 # Form
 
-`Encore\Admin\Widgets\Form` class is used to quickly build a form：
+`CODE4FUN\Admin\Widgets\Form` class is used to quickly build a form：
 
 ```php
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Auth\Database;
+namespace CODE4FUN\Admin\Auth\Database;
 
-use Encore\Admin\Traits\AdminBuilder;
+use CODE4FUN\Admin\Traits\AdminBuilder;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Database\Eloquent\Model;

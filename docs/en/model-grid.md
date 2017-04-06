@@ -1,6 +1,6 @@
 # Model-Grid
 
-Class `Encore\Admin\Grid` is used to generate tables based on the data model,for example,we have a table `movies` in database:
+Class `CODE4FUN\Admin\Grid` is used to generate tables based on the data model,for example,we have a table `movies` in database:
 
 ```sql
 CREATE TABLE `movies` (
@@ -23,8 +23,8 @@ And the model of this table is `App\Models\Movie`,The following code can generat
 ```php
 
 use App\Models\Movie;
-use Encore\Admin\Grid;
-use Encore\Admin\Facades\Admin;
+use CODE4FUN\Admin\Grid;
+use CODE4FUN\Admin\Facades\Admin;
 
 $grid = Admin::grid(Movie::class, function(Grid $grid){
 
@@ -33,15 +33,15 @@ $grid = Admin::grid(Movie::class, function(Grid $grid){
 
     // The second column shows the title field, because the title field name and the Grid object's title method conflict, so use Grid's column () method instead
     $grid->column('title');
-    
+
     // The third column shows the director field, which is set by the value($callback) method to display the corresponding user name in the users table
     $grid->director()->value(function($userId) {
         return User::find($userId)->name;
     });
-    
+
     // The fourth column appears as the describe field
     $grid->describe();
-    
+
     // The fifth column is displayed as the rate field
     $grid->rate();
 
@@ -57,7 +57,7 @@ $grid = Admin::grid(Movie::class, function(Grid $grid){
 
     // The filter($callback) method is used to set up a simple search box for the table
     $grid->filter(function ($filter) {
-    
+
         // Sets the range query for the created_at field
         $filter->between('created_at', 'Created Time')->datetime();
     });
@@ -122,7 +122,7 @@ $grid->email()->value(function ($email) {
 
 ```
 
-#### Disable the create button 
+#### Disable the create button
 ```php
 $grid->disableCreation();
 ```
@@ -146,11 +146,11 @@ $grid->actions('edit|delete');
 $grid->disableActions();
 ```
 
-#### Column control 
+#### Column control
 ```php
 $grid->rows(function($row){
 
-    //add style to lines which Id less than 10 
+    //add style to lines which Id less than 10
     if($row->id < 10) {
         $row->style('color:red');
     }
@@ -184,7 +184,7 @@ $grid->filter(function($filter){
 
     // sql: ... WHERE `user.created_at` BETWEEN $start AND $end;
     $filter->between('created_at', 'Created Time')->datetime();
-    
+
     // sql: ... WHERE `article.author_id` = $id;
     $filter->is('author_id', 'Author')->select(User::all()->pluck('name', 'id'));
 
@@ -195,7 +195,7 @@ $grid->filter(function($filter){
             ->orWhere('content', 'like', "%{$this->input}%");
 
     }, 'Text');
-    
+
     // sql: ... WHERE `rate` >= 6 AND `created_at` = {$input};
     $filter->where(function ($query) {
 
@@ -262,7 +262,7 @@ Admin::grid(User::class, function (Grid $grid) {
 
     $grid->name();
     $grid->email();
-    
+
     $grid->column('profile.age');
     $grid->column('profile.gender');
 

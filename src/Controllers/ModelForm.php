@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace CODE4FUN\Admin\Controllers;
 
 trait ModelForm
 {

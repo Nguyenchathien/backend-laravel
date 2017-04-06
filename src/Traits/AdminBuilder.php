@@ -1,10 +1,10 @@
 <?php
 
-namespace Encore\Admin\Traits;
+namespace CODE4FUN\Admin\Traits;
 
-use Encore\Admin\Form;
-use Encore\Admin\Grid;
-use Encore\Admin\Tree;
+use CODE4FUN\Admin\Form;
+use CODE4FUN\Admin\Grid;
+use CODE4FUN\Admin\Tree;
 
 trait AdminBuilder
 {

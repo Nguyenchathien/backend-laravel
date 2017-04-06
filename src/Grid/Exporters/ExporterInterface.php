@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Grid\Exporters;
+namespace CODE4FUN\Admin\Grid\Exporters;
 
 interface ExporterInterface
 {

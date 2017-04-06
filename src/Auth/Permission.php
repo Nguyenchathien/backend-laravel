@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Auth;
+namespace CODE4FUN\Admin\Auth;
 
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Middleware\PjaxMiddleware;
+use CODE4FUN\Admin\Facades\Admin;
+use CODE4FUN\Admin\Middleware\PjaxMiddleware;
 use Illuminate\Support\Facades\Auth;
 
 class Permission

@@ -1,14 +1,14 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace CODE4FUN\Admin\Controllers;
 
-use Encore\Admin\Auth\Database\Administrator;
-use Encore\Admin\Auth\Database\Permission;
-use Encore\Admin\Auth\Database\Role;
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Form;
-use Encore\Admin\Grid;
-use Encore\Admin\Layout\Content;
+use CODE4FUN\Admin\Auth\Database\Administrator;
+use CODE4FUN\Admin\Auth\Database\Permission;
+use CODE4FUN\Admin\Auth\Database\Role;
+use CODE4FUN\Admin\Facades\Admin;
+use CODE4FUN\Admin\Form;
+use CODE4FUN\Admin\Grid;
+use CODE4FUN\Admin\Layout\Content;
 use Illuminate\Routing\Controller;
 
 class UserController extends Controller

@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Tools;
+namespace CODE4FUN\Admin\Grid\Tools;
 
-use Encore\Admin\Admin;
+use CODE4FUN\Admin\Admin;
 use Illuminate\Support\Collection;
 
 class BatchActions extends AbstractTool

@@ -1,6 +1,6 @@
 # 基于数据模型的表单
 
-`Encore\Admin\Form`类用于生成基于数据模型的表单，先来个例子，数据库中有`movies`表
+`CODE4FUN\Admin\Form`类用于生成基于数据模型的表单，先来个例子，数据库中有`movies`表
 
 ```sql
 CREATE TABLE `movies` (
@@ -23,8 +23,8 @@ CREATE TABLE `movies` (
 ```php
 
 use App\Models\Movie;
-use Encore\Admin\Form;
-use Encore\Admin\Facades\Admin;
+use CODE4FUN\Admin\Form;
+use CODE4FUN\Admin\Facades\Admin;
 
 $grid = Admin::form(Movie::class, function(Form $grid){
 
@@ -33,27 +33,27 @@ $grid = Admin::form(Movie::class, function(Form $grid){
 
     // 添加text类型的input框
     $form->text('title', '电影标题');
-    
+
     $directors = [
         'John'  => 1,
         'Smith' => 2,
         'Kate'  => 3,
     ];
-    
+
     $form->select('director', '导演')->options($directors);
-    
+
     // 添加describe的textarea输入框
     $form->textarea('describe', '简介');
-    
+
     // 数字输入框
     $form->number('rate', '打分');
-    
+
     // 添加开关操作
     $form->switch('released', '发布？');
-    
+
     // 添加日期时间选择框
     $form->dateTime('release_at', '发布时间');
-    
+
     // 两个时间显示
     $form->display('created_at', '创建时间');
     $form->display('updated_at', '修改时间');
@@ -166,7 +166,7 @@ $form->multipleSelect('tags')->options(Tag::all()->pluck('name', 'id'));
 $form->select('friends')->options(function ($ids) {
 
     return User::find($ids)->pluck('name', 'id');
-    
+
 })->ajax('/admin/api/users');
 ```
 

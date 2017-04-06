@@ -1,11 +1,11 @@
 <?php
 
-namespace Encore\Admin\Grid\Filter;
+namespace CODE4FUN\Admin\Grid\Filter;
 
-use Encore\Admin\Grid\Filter;
-use Encore\Admin\Grid\Filter\Field\DateTime;
-use Encore\Admin\Grid\Filter\Field\Select;
-use Encore\Admin\Grid\Filter\Field\Text;
+use CODE4FUN\Admin\Grid\Filter;
+use CODE4FUN\Admin\Grid\Filter\Field\DateTime;
+use CODE4FUN\Admin\Grid\Filter\Field\Select;
+use CODE4FUN\Admin\Grid\Filter\Field\Text;
 
 abstract class AbstractFilter
 {

@@ -1,6 +1,6 @@
 # Model-Form
 
-The `Encore\Admin\Form` class is used to generate a data model-based form. For example, there is a` movies` table in the database
+The `CODE4FUN\Admin\Form` class is used to generate a data model-based form. For example, there is a` movies` table in the database
 
 ```sql
 CREATE TABLE `movies` (
@@ -23,8 +23,8 @@ The corresponding data model is `App\Models\Movie`, and the following code can g
 ```php
 
 use App\Models\Movie;
-use Encore\Admin\Form;
-use Encore\Admin\Facades\Admin;
+use CODE4FUN\Admin\Form;
+use CODE4FUN\Admin\Facades\Admin;
 
 $grid = Admin::form(Movie::class, function(Form $grid){
 
@@ -33,28 +33,28 @@ $grid = Admin::form(Movie::class, function(Form $grid){
 
     // Add an input box of type text
     $form->text('title', 'Movie title');
-    
+
     $directors = [
         'John'  => 1,
         'Smith' => 2,
         'Kate'  => 3,
     ];
-    
+
     $form->select('director', 'Director')->options($directors);
-    
+
     // Add textarea for the describe field
     $form->textarea('describe', 'Describe');
-    
+
     // Number input
     $form->number('rate', 'Rate');
-    
+
     // Add a switch field
     $form->switch('released', 'Released?');
-    
+
     // Add a date and time selection box
     $form->dateTime('release_at', 'release time');
-    
-    // Display two time column 
+
+    // Display two time column
     $form->display('created_at', 'Created time');
     $form->display('updated_at', 'Updated time');
 });
@@ -173,7 +173,7 @@ $form->color($column[, $label])->default('#ccc');
 ```php
 $form->time($column[, $label]);
 
-// Set the time format, more formats reference http://momentjs.com/docs/#/displaying/format/    
+// Set the time format, more formats reference http://momentjs.com/docs/#/displaying/format/
 $form->time($column[, $label])->format('HH:mm:ss');
 ```
 

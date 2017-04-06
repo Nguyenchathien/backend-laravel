@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Scaffold;
+namespace CODE4FUN\Admin\Scaffold;
 
 use Illuminate\Support\Str;
 

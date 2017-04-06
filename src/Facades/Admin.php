@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Facades;
+namespace CODE4FUN\Admin\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -8,6 +8,6 @@ class Admin extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Encore\Admin\Admin::class;
+        return \CODE4FUN\Admin\Admin::class;
     }
 }

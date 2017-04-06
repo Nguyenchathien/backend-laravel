@@ -1,9 +1,9 @@
 # Infobox组件
 
-`Encore\Admin\Widgets\InfoBox`类用来生成信息展示块：
+`CODE4FUN\Admin\Widgets\InfoBox`类用来生成信息展示块：
 
 ```php
-use Encore\Admin\Widgets\InfoBox;
+use CODE4FUN\Admin\Widgets\InfoBox;
 
 $infoBox = new InfoBox('New Users', 'users', 'aqua', '/admin/users', '1024');
 

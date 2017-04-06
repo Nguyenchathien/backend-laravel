@@ -1,6 +1,6 @@
 # 基于数据模型的表格
 
-`Encore\Admin\Grid`类用于生成基于数据模型的表格，先来个例子，数据库中有`movies`表
+`CODE4FUN\Admin\Grid`类用于生成基于数据模型的表格，先来个例子，数据库中有`movies`表
 
 ```sql
 CREATE TABLE `movies` (
@@ -23,8 +23,8 @@ CREATE TABLE `movies` (
 ```php
 
 use App\Models\Movie;
-use Encore\Admin\Grid;
-use Encore\Admin\Facades\Admin;
+use CODE4FUN\Admin\Grid;
+use CODE4FUN\Admin\Facades\Admin;
 
 $grid = Admin::grid(Movie::class, function(Grid $grid){
 
@@ -33,15 +33,15 @@ $grid = Admin::grid(Movie::class, function(Grid $grid){
 
     // 第二列显示title字段，由于title字段名和Grid对象的title方法冲突，所以用Grid的column()方法代替
     $grid->column('title');
-    
+
     // 第三列显示director字段，通过value($callback)方法设置这一列的显示内容为users表中对应的用户名
     $grid->director()->value(function($userId) {
         return User::find($userId)->name;
     });
-    
+
     // 第四列显示为describe字段
     $grid->describe();
-    
+
     // 第五列显示为rate字段
     $grid->rate();
 
@@ -57,7 +57,7 @@ $grid = Admin::grid(Movie::class, function(Grid $grid){
 
     // filter($callback)方法用来设置表格的简单搜索框
     $grid->filter(function ($filter) {
-    
+
         // 设置created_at字段的范围查询
         $filter->between('created_at', 'Created Time')->datetime();
     });
@@ -158,7 +158,7 @@ $grid->rows(function($row){
     if($row->id % 3) {
         $row->actions('edit');
     }
-   
+
     //指定列添加自定义操作按钮
     if($row->id % 2) {
         $row->actions()->add(function ($row) {
@@ -173,7 +173,7 @@ $grid->actions(function(Actions $action){
 
         //在操作按钮组前添加
         $action->prepend("<a  href='".route('exampleImageSave',['id'=>$action->getkey()])."' ><i class='fa fa-image'></i></a>");
-        
+
         //在操作按钮组后添加
         $action->append("<a  href='".route('exampleImageSave',['id'=>$action->getkey()])."' ><i class='fa fa-image'></i></a>");
 });
@@ -194,7 +194,7 @@ $grid->filter(function($filter){
 
     // sql: ... WHERE `user.created_at` BETWEEN $start AND $end;
     $filter->between('created_at', 'Created Time')->datetime();
-    
+
     // sql: ... WHERE `article.author_id` = $id;
     $filter->is('author_id', 'Author')->select(User::all()->pluck('name', 'id'));
 
@@ -205,7 +205,7 @@ $grid->filter(function($filter){
             ->orWhere('content', 'like', "%{$this->input}%");
 
     }, 'Text');
-    
+
     // sql: ... WHERE `rate` >= 6 AND `created_at` = {$input};
     $filter->where(function ($query) {
 
@@ -271,7 +271,7 @@ Admin::grid(User::class, function (Grid $grid) {
 
     $grid->name();
     $grid->email();
-    
+
     $grid->column('profile.age');
     $grid->column('profile.gender');
 

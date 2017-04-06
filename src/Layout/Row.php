@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Layout;
+namespace CODE4FUN\Admin\Layout;
 
 class Row implements Buildable
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace CODE4FUN\Admin\Form\Field;
 
-use Encore\Admin\Form\Field;
+use CODE4FUN\Admin\Form\Field;
 
 class SwitchField extends Field
 {

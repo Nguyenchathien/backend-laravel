@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Auth\Database;
+namespace CODE4FUN\Admin\Auth\Database;
 
-use Encore\Admin\Traits\AdminBuilder;
-use Encore\Admin\Traits\ModelTree;
+use CODE4FUN\Admin\Traits\AdminBuilder;
+use CODE4FUN\Admin\Traits\ModelTree;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 

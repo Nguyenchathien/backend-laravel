@@ -8,12 +8,12 @@
  * @Author: Nguyen Chat Hien
  * @Date:   2017-04-02 10:52:09
  * @Last Modified by:   Nguyen Chat Hien
- * @Last Modified time: 2017-04-06 01:15:38
+ * @Last Modified time: 2017-04-06 16:42:24
  */
 
-namespace Encore\Admin\Form\Field;
+namespace CODE4FUN\Admin\Form\Field;
 
-use Encore\Admin\Form;
+use CODE4FUN\Admin\Form;
 
 class Slug extends Text
 {

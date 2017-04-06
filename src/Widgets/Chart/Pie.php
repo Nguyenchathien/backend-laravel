@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Widgets\Chart;
+namespace CODE4FUN\Admin\Widgets\Chart;
 
-use Encore\Admin\Admin;
+use CODE4FUN\Admin\Admin;
 use Illuminate\Support\Arr;
 
 class Pie extends Chart

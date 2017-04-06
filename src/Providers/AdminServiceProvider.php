@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Providers;
+namespace CODE4FUN\Admin\Providers;
 
-use Encore\Admin\Facades\Admin;
+use CODE4FUN\Admin\Facades\Admin;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
@@ -12,10 +12,10 @@ class AdminServiceProvider extends ServiceProvider
      * @var array
      */
     protected $commands = [
-        'Encore\Admin\Commands\MakeCommand',
-        'Encore\Admin\Commands\MenuCommand',
-        'Encore\Admin\Commands\InstallCommand',
-        'Encore\Admin\Commands\UninstallCommand',
+        'CODE4FUN\Admin\Commands\MakeCommand',
+        'CODE4FUN\Admin\Commands\MenuCommand',
+        'CODE4FUN\Admin\Commands\InstallCommand',
+        'CODE4FUN\Admin\Commands\UninstallCommand',
     ];
 
     /**
@@ -24,11 +24,11 @@ class AdminServiceProvider extends ServiceProvider
      * @var array
      */
     protected $routeMiddleware = [
-        'admin.auth'        => \Encore\Admin\Middleware\Authenticate::class,
-        'admin.pjax'        => \Encore\Admin\Middleware\PjaxMiddleware::class,
-        'admin.log'         => \Encore\Admin\Middleware\OperationLog::class,
-        'admin.permission'  => \Encore\Admin\Middleware\PermissionMiddleware::class,
-        'admin.bootstrap'   => \Encore\Admin\Middleware\BootstrapMiddleware::class,
+        'admin.auth'        => \CODE4FUN\Admin\Middleware\Authenticate::class,
+        'admin.pjax'        => \CODE4FUN\Admin\Middleware\PjaxMiddleware::class,
+        'admin.log'         => \CODE4FUN\Admin\Middleware\OperationLog::class,
+        'admin.permission'  => \CODE4FUN\Admin\Middleware\PermissionMiddleware::class,
+        'admin.bootstrap'   => \CODE4FUN\Admin\Middleware\BootstrapMiddleware::class,
     ];
 
     /**
@@ -75,7 +75,7 @@ class AdminServiceProvider extends ServiceProvider
         $this->app->booting(function () {
             $loader = AliasLoader::getInstance();
 
-            $loader->alias('Admin', \Encore\Admin\Facades\Admin::class);
+            $loader->alias('Admin', \CODE4FUN\Admin\Facades\Admin::class);
 
             if (is_null(config('auth.guards.admin'))) {
                 $this->setupAuth();
@@ -98,7 +98,7 @@ class AdminServiceProvider extends ServiceProvider
             'auth.guards.admin.driver'    => 'session',
             'auth.guards.admin.provider'  => 'admin',
             'auth.providers.admin.driver' => 'eloquent',
-            'auth.providers.admin.model'  => 'Encore\Admin\Auth\Database\Administrator',
+            'auth.providers.admin.model'  => 'CODE4FUN\Admin\Auth\Database\Administrator',
         ]);
     }
 

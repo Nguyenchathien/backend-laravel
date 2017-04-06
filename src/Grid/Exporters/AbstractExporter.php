@@ -1,13 +1,13 @@
 <?php
 
-namespace Encore\Admin\Grid\Exporters;
+namespace CODE4FUN\Admin\Grid\Exporters;
 
-use Encore\Admin\Grid;
+use CODE4FUN\Admin\Grid;
 
 abstract class AbstractExporter implements ExporterInterface
 {
     /**
-     * @var \Encore\Admin\Grid
+     * @var \CODE4FUN\Admin\Grid
      */
     protected $grid;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace CODE4FUN\Admin\Form\Field;
 
 use Intervention\Image\ImageManagerStatic;
 

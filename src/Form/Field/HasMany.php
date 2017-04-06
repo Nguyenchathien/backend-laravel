@@ -1,11 +1,11 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace CODE4FUN\Admin\Form\Field;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Form;
-use Encore\Admin\Form\Field;
-use Encore\Admin\Form\NestedForm;
+use CODE4FUN\Admin\Admin;
+use CODE4FUN\Admin\Form;
+use CODE4FUN\Admin\Form\Field;
+use CODE4FUN\Admin\Form\NestedForm;
 use Illuminate\Database\Eloquent\Relations\HasMany as Relation;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
@@ -468,7 +468,7 @@ if ($('.has-error').length) {
         var tabId = '#'+$(this).attr('id');
         $('li a[href="'+tabId+'"] i').removeClass('hide');
     });
-    
+
     var first = $('.has-error:first').parent().attr('id');
     $('li a[href="#'+first+'"]').tab('show');
 }

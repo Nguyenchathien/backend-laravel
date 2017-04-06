@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Grid\Tools;
+namespace CODE4FUN\Admin\Grid\Tools;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Grid;
+use CODE4FUN\Admin\Admin;
+use CODE4FUN\Admin\Grid;
 
 class PerPageSelector extends AbstractTool
 {

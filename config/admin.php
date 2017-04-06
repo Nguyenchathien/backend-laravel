@@ -3,9 +3,9 @@
 return [
 
     /*
-     * Laravel-admin name.
+     * Backend-laravel name.
      */
-    'name'      => 'Laravel-admin',
+    'name'      => 'Backend-laravel',
 
     /*
      * Logo in admin panel header.
@@ -15,34 +15,34 @@ return [
     /*
      * Mini-logo in admin panel header.
      */
-    'logo-mini' => '<b>La</b>',
+    'logo-mini' => '<b>Fun</b>',
 
     /*
-     * Laravel-admin url prefix.
+     * Backend-laravel url prefix.
      */
     'prefix'    => 'admin',
 
     /*
-     * Laravel-admin install directory.
+     * Backend-laravel install directory.
      */
     'directory' => app_path('Admin'),
 
     /*
-     * Laravel-admin html title.
+     * Backend-laravel html title.
      */
     'title'  => 'Admin',
 
     /*
-     * Laravel-admin auth setting.
+     * Backend-laravel auth setting.
      */
     'auth' => [
         'driver'   => 'session',
         'provider' => '',
-        'model'    => Encore\Admin\Auth\Database\Administrator::class,
+        'model'    => CODE4FUN\Admin\Auth\Database\Administrator::class,
     ],
 
     /*
-     * Laravel-admin upload setting.
+     * Backend-laravel upload setting.
      */
     'upload'  => [
 
@@ -53,11 +53,11 @@ return [
             'file'   => 'file',
         ],
 
-        'host' => 'http://blog.localhost/upload/',
+        'host' => 'http://code4fun.biz/',
     ],
 
     /*
-     * Laravel-admin database setting.
+     * Backend-laravel database setting.
      */
     'database' => [
 
@@ -66,19 +66,19 @@ return [
 
         // User tables and model.
         'users_table' => 'admin_users',
-        'users_model' => Encore\Admin\Auth\Database\Administrator::class,
+        'users_model' => CODE4FUN\Admin\Auth\Database\Administrator::class,
 
         // Role table and model.
         'roles_table' => 'admin_roles',
-        'roles_model' => Encore\Admin\Auth\Database\Role::class,
+        'roles_model' => CODE4FUN\Admin\Auth\Database\Role::class,
 
         // Permission table and model.
         'permissions_table' => 'admin_permissions',
-        'permissions_model' => Encore\Admin\Auth\Database\Permission::class,
+        'permissions_model' => CODE4FUN\Admin\Auth\Database\Permission::class,
 
         // Menu table and model.
         'menu_table'  => 'admin_menu',
-        'menu_model'  => Encore\Admin\Auth\Database\Menu::class,
+        'menu_model'  => CODE4FUN\Admin\Auth\Database\Menu::class,
 
         // Pivot table for table above.
         'operation_log_table'    => 'admin_operation_log',

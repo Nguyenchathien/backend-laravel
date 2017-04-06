@@ -1,12 +1,12 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace CODE4FUN\Admin\Controllers;
 
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Layout\Content;
-use Encore\Admin\Scaffold\ControllerCreator;
-use Encore\Admin\Scaffold\MigrationCreator;
-use Encore\Admin\Scaffold\ModelCreator;
+use CODE4FUN\Admin\Facades\Admin;
+use CODE4FUN\Admin\Layout\Content;
+use CODE4FUN\Admin\Scaffold\ControllerCreator;
+use CODE4FUN\Admin\Scaffold\MigrationCreator;
+use CODE4FUN\Admin\Scaffold\ModelCreator;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Artisan;

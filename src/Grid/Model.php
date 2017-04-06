@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid;
+namespace CODE4FUN\Admin\Grid;
 
-use Encore\Admin\Middleware\PjaxMiddleware;
+use CODE4FUN\Admin\Middleware\PjaxMiddleware;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasOne;

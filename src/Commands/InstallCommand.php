@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Commands;
+namespace CODE4FUN\Admin\Commands;
 
-use Encore\Admin\Facades\Admin;
+use CODE4FUN\Admin\Facades\Admin;
 use Illuminate\Console\Command;
 
 class InstallCommand extends Command
@@ -49,7 +49,7 @@ class InstallCommand extends Command
     {
         $this->call('migrate', ['--path' => str_replace(base_path(), '', __DIR__).'/../../migrations/']);
 
-        $this->call('db:seed', ['--class' => \Encore\Admin\Auth\Database\AdminTablesSeeder::class]);
+        $this->call('db:seed', ['--class' => \CODE4FUN\Admin\Auth\Database\AdminTablesSeeder::class]);
     }
 
     /**
