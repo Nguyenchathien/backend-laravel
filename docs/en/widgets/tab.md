@@ -1,9 +1,9 @@
 # Tab component
 
-The `CODE4FUN\Admin\Widgets\Tab` class is used to generate the tab components:
+The `Code4fun\Admin\Widgets\Tab` class is used to generate the tab components:
 
 ```php
-use CODE4FUN\Admin\Widgets\Tab;
+use Code4fun\Admin\Widgets\Tab;
 
 $tab = new Tab();
 

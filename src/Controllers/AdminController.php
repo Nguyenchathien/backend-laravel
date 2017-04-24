@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin\Controllers;
+namespace Code4fun\Admin\Controllers;
 
 trait AdminController
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid;
+namespace Code4fun\Admin\Grid;
 
-use CODE4FUN\Admin\Facades\Admin;
-use CODE4FUN\Admin\Grid\Filter\AbstractFilter;
+use Code4fun\Admin\Facades\Admin;
+use Code4fun\Admin\Grid\Filter\AbstractFilter;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Request;
 use ReflectionClass;
@@ -243,7 +243,7 @@ EOT;
     public function __call($method, $arguments)
     {
         if (in_array($method, $this->supports)) {
-            $className = '\\CODE4FUN\\Admin\\Grid\\Filter\\'.ucfirst($method);
+            $className = '\\Code4fun\\Admin\\Grid\\Filter\\'.ucfirst($method);
             $reflection = new ReflectionClass($className);
 
             return $this->addFilter($reflection->newInstanceArgs($arguments));

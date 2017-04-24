@@ -1,6 +1,6 @@
 # Model-Grid
 
-Class `CODE4FUN\Admin\Grid` is used to generate tables based on the data model,for example,we have a table `movies` in database:
+Class `Code4fun\Admin\Grid` is used to generate tables based on the data model,for example,we have a table `movies` in database:
 
 ```sql
 CREATE TABLE `movies` (
@@ -23,8 +23,8 @@ And the model of this table is `App\Models\Movie`,The following code can generat
 ```php
 
 use App\Models\Movie;
-use CODE4FUN\Admin\Grid;
-use CODE4FUN\Admin\Facades\Admin;
+use Code4fun\Admin\Grid;
+use Code4fun\Admin\Facades\Admin;
 
 $grid = Admin::grid(Movie::class, function(Grid $grid){
 

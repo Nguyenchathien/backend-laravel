@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin\Widgets;
+namespace Code4fun\Admin\Widgets;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Arr;

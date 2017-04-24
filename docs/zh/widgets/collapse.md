@@ -1,8 +1,8 @@
 # Collapse组件
 
-`CODE4FUN\Admin\Widgets\Collapse`类用来生成折叠插件：
+`Code4fun\Admin\Widgets\Collapse`类用来生成折叠插件：
 ```php
-use CODE4FUN\Admin\Widgets\Collapse;
+use Code4fun\Admin\Widgets\Collapse;
 
 $collapse = new Collapse();
 

@@ -1,6 +1,6 @@
 <?php
 
-use CODE4FUN\Admin\Auth\Database\Administrator;
+use Code4fun\Admin\Auth\Database\Administrator;
 use Illuminate\Support\Facades\File;
 
 class UserSettingTest extends TestCase

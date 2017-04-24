@@ -1,9 +1,9 @@
 # Table
 
-`CODE4FUN\Admin\Widgets\Table` class is used to generate forms：
+`Code4fun\Admin\Widgets\Table` class is used to generate forms：
 
 ```php
-use CODE4FUN\Admin\Widgets\Table;
+use Code4fun\Admin\Widgets\Table;
 
 // table 1
 $headers = ['Id', 'Email', 'Name', 'Company'];

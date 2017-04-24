@@ -1,8 +1,8 @@
 <?php
 
-namespace CODE4FUN\Admin\Middleware;
+namespace Code4fun\Admin\Middleware;
 
-use CODE4FUN\Admin\Auth\Permission;
+use Code4fun\Admin\Auth\Permission;
 use Illuminate\Http\Request;
 
 class PermissionMiddleware

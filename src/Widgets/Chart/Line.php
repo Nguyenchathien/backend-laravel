@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin\Widgets\Chart;
+namespace Code4fun\Admin\Widgets\Chart;
 
 class Line extends Chart
 {

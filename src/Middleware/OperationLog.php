@@ -1,8 +1,8 @@
 <?php
 
-namespace CODE4FUN\Admin\Middleware;
+namespace Code4fun\Admin\Middleware;
 
-use CODE4FUN\Admin\Facades\Admin;
+use Code4fun\Admin\Facades\Admin;
 use Illuminate\Http\Request;
 
 class OperationLog
@@ -26,7 +26,7 @@ class OperationLog
                 'input'   => json_encode($request->input()),
             ];
 
-            \CODE4FUN\Admin\Auth\Database\OperationLog::create($log);
+            \Code4fun\Admin\Auth\Database\OperationLog::create($log);
         }
 
         return $next($request);

@@ -1,12 +1,12 @@
 <?php
 
-namespace CODE4FUN\Admin\Controllers;
+namespace Code4fun\Admin\Controllers;
 
-use CODE4FUN\Admin\Auth\Database\Administrator;
-use CODE4FUN\Admin\Auth\Database\OperationLog;
-use CODE4FUN\Admin\Facades\Admin;
-use CODE4FUN\Admin\Grid;
-use CODE4FUN\Admin\Layout\Content;
+use Code4fun\Admin\Auth\Database\Administrator;
+use Code4fun\Admin\Auth\Database\OperationLog;
+use Code4fun\Admin\Facades\Admin;
+use Code4fun\Admin\Grid;
+use Code4fun\Admin\Layout\Content;
 use Illuminate\Routing\Controller;
 
 class LogController extends Controller

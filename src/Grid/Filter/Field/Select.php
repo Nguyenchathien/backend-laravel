@@ -1,9 +1,9 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid\Filter\Field;
+namespace Code4fun\Admin\Grid\Filter\Field;
 
-use CODE4FUN\Admin\Facades\Admin;
-use CODE4FUN\Admin\Grid\Filter\AbstractFilter;
+use Code4fun\Admin\Facades\Admin;
+use Code4fun\Admin\Grid\Filter\AbstractFilter;
 use Illuminate\Contracts\Support\Arrayable;
 
 class Select

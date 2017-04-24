@@ -1,8 +1,8 @@
 <?php
 
-namespace CODE4FUN\Admin\Form\Field;
+namespace Code4fun\Admin\Form\Field;
 
-use CODE4FUN\Admin\Form\Field;
+use Code4fun\Admin\Form\Field;
 
 class Text extends Field
 {
@@ -29,39 +29,38 @@ class Text extends Field
 
         $('#title').change(function() {
 
-    $.ajax({
-        method: 'post',
-        url: '/admin/api/slug',
-        beforeSend: function (xhr) {
-            var token = $('input[name="_token"]').val();
+            $.ajax({
+                method: 'post',
+                url: '/admin/api/slug',
+                beforeSend: function (xhr) {
+                    var token = $('input[name="_token"]').val();
 
-            if (token) {
-              return xhr.setRequestHeader('X-CSRF-TOKEN', token);
-            }
-        },
-        data: {
-            post_name: $("#title").val(),
-        },
-        success: function (data) {
+                    if (token) {
+                      return xhr.setRequestHeader('X-CSRF-TOKEN', token);
+                    }
+                },
+                data: {
+                    post_name: $("#title").val(),
+                },
+                success: function (data) {
 
-            var slug = $('input[name="slug"]');
+                    var slug = $('input[name="slug"]');
 
-            if (data.message == 0) {
-                $('#title').css('border-color', '#d2d6de');
-                $('span.error').remove();
-                slug.attr('value', data.post_name);
-                $('button[type="submit"]').prop('disabled', false);
-            } else {
-                $('#title').css('border-color', 'red');
-                $("#title").focus();
-                $("#title").before('<span class="label label-danger error" style="position:absolute;top: -23px;">Already Exist!</span>');
-                $('button[type="submit"]').prop('disabled', true);
-            }
+                    if (data.message == 0) {
+                        $('#title').css('border-color', '#d2d6de');
+                        $('span.error').remove();
+                        slug.attr('value', data.post_name);
+                        $('button[type="submit"]').prop('disabled', false);
+                    } else {
+                        $('#title').css('border-color', 'red');
+                        $("#title").focus();
+                        $("#title").before('<span class="label label-danger error" style="position:absolute;top: -23px;">Already Exist!</span>');
+                        $('button[type="submit"]').prop('disabled', true);
+                    }
 
-
-        }
-    });
-});
+                }
+            });
+        });
 
 EOT;
 

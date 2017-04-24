@@ -1,10 +1,10 @@
 <?php
 
-namespace CODE4FUN\Admin\Traits;
+namespace Code4fun\Admin\Traits;
 
-use CODE4FUN\Admin\Form;
-use CODE4FUN\Admin\Grid;
-use CODE4FUN\Admin\Tree;
+use Code4fun\Admin\Form;
+use Code4fun\Admin\Grid;
+use Code4fun\Admin\Tree;
 
 trait AdminBuilder
 {

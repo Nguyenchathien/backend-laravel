@@ -1,8 +1,8 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid\Displayers;
+namespace Code4fun\Admin\Grid\Displayers;
 
-use CODE4FUN\Admin\Admin;
+use Code4fun\Admin\Admin;
 
 class Checkbox extends AbstractDisplayer
 {

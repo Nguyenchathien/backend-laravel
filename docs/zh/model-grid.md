@@ -1,6 +1,6 @@
 # 基于数据模型的表格
 
-`CODE4FUN\Admin\Grid`类用于生成基于数据模型的表格，先来个例子，数据库中有`movies`表
+`Code4fun\Admin\Grid`类用于生成基于数据模型的表格，先来个例子，数据库中有`movies`表
 
 ```sql
 CREATE TABLE `movies` (
@@ -23,8 +23,8 @@ CREATE TABLE `movies` (
 ```php
 
 use App\Models\Movie;
-use CODE4FUN\Admin\Grid;
-use CODE4FUN\Admin\Facades\Admin;
+use Code4fun\Admin\Grid;
+use Code4fun\Admin\Facades\Admin;
 
 $grid = Admin::grid(Movie::class, function(Grid $grid){
 

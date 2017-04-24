@@ -1,9 +1,9 @@
 <?php
 
-namespace CODE4FUN\Admin\Widgets\Chart;
+namespace Code4fun\Admin\Widgets\Chart;
 
-use CODE4FUN\Admin\Admin;
-use CODE4FUN\Admin\Widgets\Widget;
+use Code4fun\Admin\Admin;
+use Code4fun\Admin\Widgets\Widget;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Renderable;
 

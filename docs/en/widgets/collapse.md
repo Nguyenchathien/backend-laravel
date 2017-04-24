@@ -1,8 +1,8 @@
 # Collapse
 
-`CODE4FUN\Admin\Widgets\Collapse` class used to generate folding components:
+`Code4fun\Admin\Widgets\Collapse` class used to generate folding components:
 ```php
-use CODE4FUN\Admin\Widgets\Collapse;
+use Code4fun\Admin\Widgets\Collapse;
 
 $collapse = new Collapse();
 

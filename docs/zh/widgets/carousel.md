@@ -1,9 +1,9 @@
 # Carousel组件
 
-`CODE4FUN\Admin\Widgets\Carousel`用来生成滑动相册组件：
+`Code4fun\Admin\Widgets\Carousel`用来生成滑动相册组件：
 
 ```php
-use CODE4FUN\Admin\Widgets\Carousel;
+use Code4fun\Admin\Widgets\Carousel;
 
 $items = [
     [

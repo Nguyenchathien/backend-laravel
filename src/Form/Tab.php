@@ -1,8 +1,8 @@
 <?php
 
-namespace CODE4FUN\Admin\Form;
+namespace Code4fun\Admin\Form;
 
-use CODE4FUN\Admin\Form;
+use Code4fun\Admin\Form;
 use Illuminate\Support\Collection;
 
 class Tab

@@ -1,9 +1,9 @@
 <?php
 
-namespace CODE4FUN\Admin\Form\Field;
+namespace Code4fun\Admin\Form\Field;
 
-use CODE4FUN\Admin\Form\EmbeddedForm;
-use CODE4FUN\Admin\Form\Field;
+use Code4fun\Admin\Form\EmbeddedForm;
+use Code4fun\Admin\Form\Field;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 

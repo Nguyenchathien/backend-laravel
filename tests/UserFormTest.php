@@ -1,6 +1,6 @@
 <?php
 
-use CODE4FUN\Admin\Auth\Database\Administrator;
+use Code4fun\Admin\Auth\Database\Administrator;
 use Tests\Models\User as UserModel;
 
 class UserFormTest extends TestCase

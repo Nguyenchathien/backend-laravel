@@ -1,8 +1,8 @@
 <?php
 
-namespace CODE4FUN\Admin\Widgets;
+namespace Code4fun\Admin\Widgets;
 
-use CODE4FUN\Admin\Form\Field;
+use Code4fun\Admin\Form\Field;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Renderable;
 
@@ -179,7 +179,7 @@ class Form implements Renderable
      */
     public static function findFieldClass($method)
     {
-        $class = array_get(\CODE4FUN\Admin\Form::$availableFields, $method);
+        $class = array_get(\Code4fun\Admin\Form::$availableFields, $method);
 
         if (class_exists($class)) {
             return $class;

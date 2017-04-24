@@ -1,9 +1,9 @@
 <?php
 
-namespace CODE4FUN\Admin\Form;
+namespace Code4fun\Admin\Form;
 
-use CODE4FUN\Admin\Facades\Admin;
-use CODE4FUN\Admin\Form;
+use Code4fun\Admin\Facades\Admin;
+use Code4fun\Admin\Form;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;

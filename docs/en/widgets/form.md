@@ -1,6 +1,6 @@
 # Form
 
-`CODE4FUN\Admin\Widgets\Form` class is used to quickly build a form：
+`Code4fun\Admin\Widgets\Form` class is used to quickly build a form：
 
 ```php
 

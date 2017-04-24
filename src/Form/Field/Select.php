@@ -1,9 +1,9 @@
 <?php
 
-namespace CODE4FUN\Admin\Form\Field;
+namespace Code4fun\Admin\Form\Field;
 
-use CODE4FUN\Admin\Facades\Admin;
-use CODE4FUN\Admin\Form\Field;
+use Code4fun\Admin\Facades\Admin;
+use Code4fun\Admin\Form\Field;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Str;
 

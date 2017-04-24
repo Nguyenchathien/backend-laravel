@@ -1,9 +1,9 @@
 # Box
 
-`CODE4FUN\Admin\Widgets\Box` used to generate box components:
+`Code4fun\Admin\Widgets\Box` used to generate box components:
 
 ```php
-use CODE4FUN\Admin\Widgets\Box;
+use Code4fun\Admin\Widgets\Box;
 
 $box = new Box('Box Title', 'Box content');
 

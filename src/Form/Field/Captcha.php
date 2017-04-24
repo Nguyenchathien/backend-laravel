@@ -1,8 +1,8 @@
 <?php
 
-namespace CODE4FUN\Admin\Form\Field;
+namespace Code4fun\Admin\Form\Field;
 
-use CODE4FUN\Admin\Form;
+use Code4fun\Admin\Form;
 
 class Captcha extends Text
 {

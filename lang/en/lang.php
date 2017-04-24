@@ -64,6 +64,9 @@ return [
     'roles'         => 'Roles',
     'permissions'   => 'Permissions',
     'slug'          => 'Slug',
+    'category'      => 'Categorys',
+    'post'          => 'Posts',
+    'tags'          => 'Tags',
 
     'created_at'    => 'Created At',
     'updated_at'    => 'Updated At',

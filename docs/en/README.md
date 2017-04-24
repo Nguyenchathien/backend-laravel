@@ -37,7 +37,7 @@ composer require encore/laravel-admin "1.1.x-dev"
 In`config/app.php`add`ServiceProvider`:
 
 ```
-CODE4FUN\Admin\Providers\AdminServiceProvider::class
+Code4fun\Admin\Providers\AdminServiceProvider::class
 ```
 
 Then run these commands to finnish install：

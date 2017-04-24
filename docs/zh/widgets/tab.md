@@ -1,9 +1,9 @@
 # Tab组件
 
-`CODE4FUN\Admin\Widgets\Tab`类用来生成选项卡组件：
+`Code4fun\Admin\Widgets\Tab`类用来生成选项卡组件：
 
 ```php
-use CODE4FUN\Admin\Widgets\Tab;
+use Code4fun\Admin\Widgets\Tab;
 
 $tab = new Tab();
 

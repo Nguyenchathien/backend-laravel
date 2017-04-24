@@ -1,9 +1,9 @@
 <?php
 
-namespace CODE4FUN\Admin\Middleware;
+namespace Code4fun\Admin\Middleware;
 
 use Closure;
-use CODE4FUN\Admin\Admin;
+use Code4fun\Admin\Admin;
 use Illuminate\Support\Facades\Auth;
 
 class Authenticate

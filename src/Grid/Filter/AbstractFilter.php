@@ -1,11 +1,11 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid\Filter;
+namespace Code4fun\Admin\Grid\Filter;
 
-use CODE4FUN\Admin\Grid\Filter;
-use CODE4FUN\Admin\Grid\Filter\Field\DateTime;
-use CODE4FUN\Admin\Grid\Filter\Field\Select;
-use CODE4FUN\Admin\Grid\Filter\Field\Text;
+use Code4fun\Admin\Grid\Filter;
+use Code4fun\Admin\Grid\Filter\Field\DateTime;
+use Code4fun\Admin\Grid\Filter\Field\Select;
+use Code4fun\Admin\Grid\Filter\Field\Text;
 
 abstract class AbstractFilter
 {

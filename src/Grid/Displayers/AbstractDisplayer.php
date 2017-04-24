@@ -1,9 +1,9 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid\Displayers;
+namespace Code4fun\Admin\Grid\Displayers;
 
-use CODE4FUN\Admin\Grid;
-use CODE4FUN\Admin\Grid\Column;
+use Code4fun\Admin\Grid;
+use Code4fun\Admin\Grid\Column;
 
 abstract class AbstractDisplayer
 {

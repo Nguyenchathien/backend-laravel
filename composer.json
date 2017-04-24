@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "CODE4FUN\\Admin\\": "src/"
+            "Code4fun\\Admin\\": "package/backend-laravel/src"
         },
         "files": [
             "src/helpers.php"

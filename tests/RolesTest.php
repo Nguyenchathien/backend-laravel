@@ -1,7 +1,7 @@
 <?php
 
-use CODE4FUN\Admin\Auth\Database\Administrator;
-use CODE4FUN\Admin\Auth\Database\Role;
+use Code4fun\Admin\Auth\Database\Administrator;
+use Code4fun\Admin\Auth\Database\Role;
 
 class RolesTest extends TestCase
 {

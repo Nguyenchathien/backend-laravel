@@ -1,7 +1,7 @@
 <?php
 
-use CODE4FUN\Admin\Auth\Database\Administrator;
-use CODE4FUN\Admin\Auth\Database\OperationLog;
+use Code4fun\Admin\Auth\Database\Administrator;
+use Code4fun\Admin\Auth\Database\OperationLog;
 
 class OperationLogTest extends TestCase
 {

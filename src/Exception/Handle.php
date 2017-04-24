@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin\Exception;
+namespace Code4fun\Admin\Exception;
 
 use Illuminate\Support\MessageBag;
 use Illuminate\Support\ViewErrorBag;

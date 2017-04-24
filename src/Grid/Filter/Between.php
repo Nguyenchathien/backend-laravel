@@ -1,8 +1,8 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid\Filter;
+namespace Code4fun\Admin\Grid\Filter;
 
-use CODE4FUN\Admin\Admin;
+use Code4fun\Admin\Admin;
 
 class Between extends AbstractFilter
 {

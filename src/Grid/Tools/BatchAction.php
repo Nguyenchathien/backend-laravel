@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid\Tools;
+namespace Code4fun\Admin\Grid\Tools;
 
 abstract class BatchAction
 {

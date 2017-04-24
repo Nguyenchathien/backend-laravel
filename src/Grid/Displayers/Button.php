@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid\Displayers;
+namespace Code4fun\Admin\Grid\Displayers;
 
 class Button extends AbstractDisplayer
 {

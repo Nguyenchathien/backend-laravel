@@ -1,9 +1,9 @@
 <?php
 
-namespace CODE4FUN\Admin\Auth;
+namespace Code4fun\Admin\Auth;
 
-use CODE4FUN\Admin\Facades\Admin;
-use CODE4FUN\Admin\Middleware\PjaxMiddleware;
+use Code4fun\Admin\Facades\Admin;
+use Code4fun\Admin\Middleware\PjaxMiddleware;
 use Illuminate\Support\Facades\Auth;
 
 class Permission

@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin\Auth\Database;
+namespace Code4fun\Admin\Auth\Database;
 
 use Illuminate\Database\Seeder;
 

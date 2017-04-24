@@ -1,6 +1,6 @@
 # Model-Form
 
-The `CODE4FUN\Admin\Form` class is used to generate a data model-based form. For example, there is a` movies` table in the database
+The `Code4fun\Admin\Form` class is used to generate a data model-based form. For example, there is a` movies` table in the database
 
 ```sql
 CREATE TABLE `movies` (
@@ -23,8 +23,8 @@ The corresponding data model is `App\Models\Movie`, and the following code can g
 ```php
 
 use App\Models\Movie;
-use CODE4FUN\Admin\Form;
-use CODE4FUN\Admin\Facades\Admin;
+use Code4fun\Admin\Form;
+use Code4fun\Admin\Facades\Admin;
 
 $grid = Admin::form(Movie::class, function(Form $grid){
 

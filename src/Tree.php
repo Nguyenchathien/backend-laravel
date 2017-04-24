@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin;
+namespace Code4fun\Admin;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Database\Eloquent\Model;

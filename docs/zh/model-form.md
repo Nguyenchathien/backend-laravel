@@ -1,6 +1,6 @@
 # 基于数据模型的表单
 
-`CODE4FUN\Admin\Form`类用于生成基于数据模型的表单，先来个例子，数据库中有`movies`表
+`Code4fun\Admin\Form`类用于生成基于数据模型的表单，先来个例子，数据库中有`movies`表
 
 ```sql
 CREATE TABLE `movies` (
@@ -23,8 +23,8 @@ CREATE TABLE `movies` (
 ```php
 
 use App\Models\Movie;
-use CODE4FUN\Admin\Form;
-use CODE4FUN\Admin\Facades\Admin;
+use Code4fun\Admin\Form;
+use Code4fun\Admin\Facades\Admin;
 
 $grid = Admin::form(Movie::class, function(Form $grid){
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid\Displayers;
+namespace Code4fun\Admin\Grid\Displayers;
 
-use CODE4FUN\Admin\Facades\Admin;
+use Code4fun\Admin\Facades\Admin;
 use Illuminate\Support\Arr;
 
 class SwitchGroup extends AbstractDisplayer

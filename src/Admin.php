@@ -1,11 +1,11 @@
 <?php
 
-namespace CODE4FUN\Admin;
+namespace Code4fun\Admin;
 
 use Closure;
-use CODE4FUN\Admin\Auth\Database\Menu;
-use CODE4FUN\Admin\Layout\Content;
-use CODE4FUN\Admin\Widgets\Navbar;
+use Code4fun\Admin\Auth\Database\Menu;
+use Code4fun\Admin\Layout\Content;
+use Code4fun\Admin\Widgets\Navbar;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
@@ -41,7 +41,7 @@ class Admin
      * @param $model
      * @param Closure $callable
      *
-     * @return \CODE4FUN\Admin\Grid
+     * @return \Code4fun\Admin\Grid
      */
     public function grid($model, Closure $callable)
     {
@@ -52,7 +52,7 @@ class Admin
      * @param $model
      * @param Closure $callable
      *
-     * @return \CODE4FUN\Admin\Form
+     * @return \Code4fun\Admin\Form
      */
     public function form($model, Closure $callable)
     {
@@ -64,7 +64,7 @@ class Admin
      *
      * @param $model
      *
-     * @return \CODE4FUN\Admin\Tree
+     * @return \Code4fun\Admin\Tree
      */
     public function tree($model, Closure $callable = null)
     {
@@ -74,7 +74,7 @@ class Admin
     /**
      * @param Closure $callable
      *
-     * @return \CODE4FUN\Admin\Layout\Content
+     * @return \Code4fun\Admin\Layout\Content
      */
     public function content(Closure $callable = null)
     {
@@ -235,7 +235,7 @@ class Admin
     /**
      * Get navbar object.
      *
-     * @return \CODE4FUN\Admin\Widgets\Navbar
+     * @return \Code4fun\Admin\Widgets\Navbar
      */
     public function getNavbar()
     {
@@ -250,7 +250,7 @@ class Admin
     {
         $attributes = [
             'prefix'        => config('admin.prefix'),
-            'namespace'     => 'CODE4FUN\Admin\Controllers',
+            'namespace'     => 'Code4fun\Admin\Controllers',
             'middleware'    => ['web', 'admin'],
         ];
 
@@ -284,12 +284,12 @@ class Admin
         Route::group($attributes, function ($router) {
 
             /* @var \Illuminate\Routing\Router $router */
-            $router->get('terminal/database', 'CODE4FUN\Admin\Controllers\TerminalController@database');
-            $router->post('terminal/database', 'CODE4FUN\Admin\Controllers\TerminalController@runDatabase');
-            $router->get('terminal/artisan', 'CODE4FUN\Admin\Controllers\TerminalController@artisan');
-            $router->post('terminal/artisan', 'CODE4FUN\Admin\Controllers\TerminalController@runArtisan');
-            $router->get('scaffold', 'CODE4FUN\Admin\Controllers\ScaffoldController@index');
-            $router->post('scaffold', 'CODE4FUN\Admin\Controllers\ScaffoldController@store');
+            $router->get('terminal/database', 'Code4fun\Admin\Controllers\TerminalController@database');
+            $router->post('terminal/database', 'Code4fun\Admin\Controllers\TerminalController@runDatabase');
+            $router->get('terminal/artisan', 'Code4fun\Admin\Controllers\TerminalController@artisan');
+            $router->post('terminal/artisan', 'Code4fun\Admin\Controllers\TerminalController@runArtisan');
+            $router->get('scaffold', 'Code4fun\Admin\Controllers\ScaffoldController@index');
+            $router->post('scaffold', 'Code4fun\Admin\Controllers\ScaffoldController@store');
         });
     }
 }

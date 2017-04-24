@@ -1,13 +1,13 @@
 <?php
 
-namespace CODE4FUN\Admin;
+namespace Code4fun\Admin;
 
 use Closure;
-use CODE4FUN\Admin\Exception\Handle;
-use CODE4FUN\Admin\Form\Builder;
-use CODE4FUN\Admin\Form\Field;
-use CODE4FUN\Admin\Form\Field\File;
-use CODE4FUN\Admin\Form\Tab;
+use Code4fun\Admin\Exception\Handle;
+use Code4fun\Admin\Form\Builder;
+use Code4fun\Admin\Form\Field;
+use Code4fun\Admin\Form\Field\File;
+use Code4fun\Admin\Form\Tab;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Http\Request;
@@ -1123,53 +1123,53 @@ class Form
     public static function registerBuiltinFields()
     {
         $map = [
-            'button'            => \CODE4FUN\Admin\Form\Field\Button::class,
-            'checkbox'          => \CODE4FUN\Admin\Form\Field\Checkbox::class,
-            'color'             => \CODE4FUN\Admin\Form\Field\Color::class,
-            'currency'          => \CODE4FUN\Admin\Form\Field\Currency::class,
-            'date'              => \CODE4FUN\Admin\Form\Field\Date::class,
-            'dateRange'         => \CODE4FUN\Admin\Form\Field\DateRange::class,
-            'datetime'          => \CODE4FUN\Admin\Form\Field\Datetime::class,
-            'dateTimeRange'     => \CODE4FUN\Admin\Form\Field\DatetimeRange::class,
-            'datetimeRange'     => \CODE4FUN\Admin\Form\Field\DatetimeRange::class,
-            'decimal'           => \CODE4FUN\Admin\Form\Field\Decimal::class,
-            'display'           => \CODE4FUN\Admin\Form\Field\Display::class,
-            'divider'           => \CODE4FUN\Admin\Form\Field\Divide::class,
-            'divide'            => \CODE4FUN\Admin\Form\Field\Divide::class,
-            'embeds'            => \CODE4FUN\Admin\Form\Field\Embeds::class,
-            'editor'            => \CODE4FUN\Admin\Form\Field\Editor::class,
-            'email'             => \CODE4FUN\Admin\Form\Field\Email::class,
-            'file'              => \CODE4FUN\Admin\Form\Field\File::class,
-            'hasMany'           => \CODE4FUN\Admin\Form\Field\HasMany::class,
-            'hidden'            => \CODE4FUN\Admin\Form\Field\Hidden::class,
-            'id'                => \CODE4FUN\Admin\Form\Field\Id::class,
-            'image'             => \CODE4FUN\Admin\Form\Field\Image::class,
-            'ip'                => \CODE4FUN\Admin\Form\Field\Ip::class,
-            'map'               => \CODE4FUN\Admin\Form\Field\Map::class,
-            'mobile'            => \CODE4FUN\Admin\Form\Field\Mobile::class,
-            'month'             => \CODE4FUN\Admin\Form\Field\Month::class,
-            'multipleSelect'    => \CODE4FUN\Admin\Form\Field\MultipleSelect::class,
-            'number'            => \CODE4FUN\Admin\Form\Field\Number::class,
-            'password'          => \CODE4FUN\Admin\Form\Field\Password::class,
-            'radio'             => \CODE4FUN\Admin\Form\Field\Radio::class,
-            'rate'              => \CODE4FUN\Admin\Form\Field\Rate::class,
-            'select'            => \CODE4FUN\Admin\Form\Field\Select::class,
-            'slider'            => \CODE4FUN\Admin\Form\Field\Slider::class,
-            'switch'            => \CODE4FUN\Admin\Form\Field\SwitchField::class,
-            'text'              => \CODE4FUN\Admin\Form\Field\Text::class,
-            'slug'              => \CODE4FUN\Admin\Form\Field\Slug::class,
-            'textarea'          => \CODE4FUN\Admin\Form\Field\Textarea::class,
-            'ckeditor'          => \CODE4FUN\Admin\Form\Field\Ckeditor::class,
-            'time'              => \CODE4FUN\Admin\Form\Field\Time::class,
-            'timeRange'         => \CODE4FUN\Admin\Form\Field\TimeRange::class,
-            'url'               => \CODE4FUN\Admin\Form\Field\Url::class,
-            'year'              => \CODE4FUN\Admin\Form\Field\Year::class,
-            'html'              => \CODE4FUN\Admin\Form\Field\Html::class,
-            'tags'              => \CODE4FUN\Admin\Form\Field\Tags::class,
-            'icon'              => \CODE4FUN\Admin\Form\Field\Icon::class,
-            'multipleFile'      => \CODE4FUN\Admin\Form\Field\MultipleFile::class,
-            'multipleImage'     => \CODE4FUN\Admin\Form\Field\MultipleImage::class,
-            'captcha'           => \CODE4FUN\Admin\Form\Field\Captcha::class,
+            'button'            => \Code4fun\Admin\Form\Field\Button::class,
+            'checkbox'          => \Code4fun\Admin\Form\Field\Checkbox::class,
+            'color'             => \Code4fun\Admin\Form\Field\Color::class,
+            'currency'          => \Code4fun\Admin\Form\Field\Currency::class,
+            'date'              => \Code4fun\Admin\Form\Field\Date::class,
+            'dateRange'         => \Code4fun\Admin\Form\Field\DateRange::class,
+            'datetime'          => \Code4fun\Admin\Form\Field\Datetime::class,
+            'dateTimeRange'     => \Code4fun\Admin\Form\Field\DatetimeRange::class,
+            'datetimeRange'     => \Code4fun\Admin\Form\Field\DatetimeRange::class,
+            'decimal'           => \Code4fun\Admin\Form\Field\Decimal::class,
+            'display'           => \Code4fun\Admin\Form\Field\Display::class,
+            'divider'           => \Code4fun\Admin\Form\Field\Divide::class,
+            'divide'            => \Code4fun\Admin\Form\Field\Divide::class,
+            'embeds'            => \Code4fun\Admin\Form\Field\Embeds::class,
+            'editor'            => \Code4fun\Admin\Form\Field\Editor::class,
+            'email'             => \Code4fun\Admin\Form\Field\Email::class,
+            'file'              => \Code4fun\Admin\Form\Field\File::class,
+            'hasMany'           => \Code4fun\Admin\Form\Field\HasMany::class,
+            'hidden'            => \Code4fun\Admin\Form\Field\Hidden::class,
+            'id'                => \Code4fun\Admin\Form\Field\Id::class,
+            'image'             => \Code4fun\Admin\Form\Field\Image::class,
+            'ip'                => \Code4fun\Admin\Form\Field\Ip::class,
+            'map'               => \Code4fun\Admin\Form\Field\Map::class,
+            'mobile'            => \Code4fun\Admin\Form\Field\Mobile::class,
+            'month'             => \Code4fun\Admin\Form\Field\Month::class,
+            'multipleSelect'    => \Code4fun\Admin\Form\Field\MultipleSelect::class,
+            'number'            => \Code4fun\Admin\Form\Field\Number::class,
+            'password'          => \Code4fun\Admin\Form\Field\Password::class,
+            'radio'             => \Code4fun\Admin\Form\Field\Radio::class,
+            'rate'              => \Code4fun\Admin\Form\Field\Rate::class,
+            'select'            => \Code4fun\Admin\Form\Field\Select::class,
+            'slider'            => \Code4fun\Admin\Form\Field\Slider::class,
+            'switch'            => \Code4fun\Admin\Form\Field\SwitchField::class,
+            'text'              => \Code4fun\Admin\Form\Field\Text::class,
+            'slug'              => \Code4fun\Admin\Form\Field\Slug::class,
+            'textarea'          => \Code4fun\Admin\Form\Field\Textarea::class,
+            'ckeditor'          => \Code4fun\Admin\Form\Field\Ckeditor::class,
+            'time'              => \Code4fun\Admin\Form\Field\Time::class,
+            'timeRange'         => \Code4fun\Admin\Form\Field\TimeRange::class,
+            'url'               => \Code4fun\Admin\Form\Field\Url::class,
+            'year'              => \Code4fun\Admin\Form\Field\Year::class,
+            'html'              => \Code4fun\Admin\Form\Field\Html::class,
+            'tags'              => \Code4fun\Admin\Form\Field\Tags::class,
+            'icon'              => \Code4fun\Admin\Form\Field\Icon::class,
+            'multipleFile'      => \Code4fun\Admin\Form\Field\MultipleFile::class,
+            'multipleImage'     => \Code4fun\Admin\Form\Field\MultipleImage::class,
+            'captcha'           => \Code4fun\Admin\Form\Field\Captcha::class,
         ];
 
         foreach ($map as $abstract => $class) {

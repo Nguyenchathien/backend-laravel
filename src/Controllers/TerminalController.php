@@ -1,9 +1,9 @@
 <?php
 
-namespace CODE4FUN\Admin\Controllers;
+namespace Code4fun\Admin\Controllers;
 
-use CODE4FUN\Admin\Facades\Admin;
-use CODE4FUN\Admin\Layout\Content;
+use Code4fun\Admin\Facades\Admin;
+use Code4fun\Admin\Layout\Content;
 use Exception;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Routing\Controller;

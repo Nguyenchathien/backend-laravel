@@ -1,9 +1,9 @@
 # Carousel
 
-`CODE4FUN\Admin\Widgets\Carousel`Used to generate carousel components:
+`Code4fun\Admin\Widgets\Carousel`Used to generate carousel components:
 
 ```php
-use CODE4FUN\Admin\Widgets\Carousel;
+use Code4fun\Admin\Widgets\Carousel;
 
 $items = [
     [

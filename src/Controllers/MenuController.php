@@ -1,16 +1,16 @@
 <?php
 
-namespace CODE4FUN\Admin\Controllers;
+namespace Code4fun\Admin\Controllers;
 
-use CODE4FUN\Admin\Auth\Database\Menu;
-use CODE4FUN\Admin\Auth\Database\Role;
-use CODE4FUN\Admin\Facades\Admin;
-use CODE4FUN\Admin\Form;
-use CODE4FUN\Admin\Layout\Column;
-use CODE4FUN\Admin\Layout\Content;
-use CODE4FUN\Admin\Layout\Row;
-use CODE4FUN\Admin\Tree;
-use CODE4FUN\Admin\Widgets\Box;
+use Code4fun\Admin\Auth\Database\Menu;
+use Code4fun\Admin\Auth\Database\Role;
+use Code4fun\Admin\Facades\Admin;
+use Code4fun\Admin\Form;
+use Code4fun\Admin\Layout\Column;
+use Code4fun\Admin\Layout\Content;
+use Code4fun\Admin\Layout\Row;
+use Code4fun\Admin\Tree;
+use Code4fun\Admin\Widgets\Box;
 use Illuminate\Routing\Controller;
 
 class MenuController extends Controller
@@ -32,7 +32,7 @@ class MenuController extends Controller
                 $row->column(6, $this->treeView()->render());
 
                 $row->column(6, function (Column $column) {
-                    $form = new \CODE4FUN\Admin\Widgets\Form();
+                    $form = new \Code4fun\Admin\Widgets\Form();
                     $form->action(admin_url('auth/menu'));
 
                     $form->select('parent_id', trans('admin::lang.parent_id'))->options(Menu::selectOptions());
@@ -57,12 +57,12 @@ class MenuController extends Controller
     public function show($id)
     {
         return redirect()->action(
-            '\CODE4FUN\Admin\Controllers\MenuController@edit', ['id' => $id]
+            '\Code4fun\Admin\Controllers\MenuController@edit', ['id' => $id]
         );
     }
 
     /**
-     * @return \CODE4FUN\Admin\Tree
+     * @return \Code4fun\Admin\Tree
      */
     protected function treeView()
     {

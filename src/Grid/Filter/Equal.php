@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid\Filter;
+namespace Code4fun\Admin\Grid\Filter;
 
 class Equal extends AbstractFilter
 {

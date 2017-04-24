@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin\Form\Field;
+namespace Code4fun\Admin\Form\Field;
 
 class Ip extends Text
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid\Filter\Field;
+namespace Code4fun\Admin\Grid\Filter\Field;
 
-use CODE4FUN\Admin\Admin;
+use Code4fun\Admin\Admin;
 
 class DateTime
 {
     /**
-     * @var \CODE4FUN\Admin\Grid\Filter\AbstractFilter
+     * @var \Code4fun\Admin\Grid\Filter\AbstractFilter
      */
     protected $filter;
 

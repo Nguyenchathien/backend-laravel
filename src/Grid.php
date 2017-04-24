@@ -1,17 +1,17 @@
 <?php
 
-namespace CODE4FUN\Admin;
+namespace Code4fun\Admin;
 
 use Closure;
-use CODE4FUN\Admin\Exception\Handle;
-use CODE4FUN\Admin\Grid\Column;
-use CODE4FUN\Admin\Grid\Displayers\Actions;
-use CODE4FUN\Admin\Grid\Displayers\RowSelector;
-use CODE4FUN\Admin\Grid\Exporter;
-use CODE4FUN\Admin\Grid\Filter;
-use CODE4FUN\Admin\Grid\Model;
-use CODE4FUN\Admin\Grid\Row;
-use CODE4FUN\Admin\Grid\Tools;
+use Code4fun\Admin\Exception\Handle;
+use Code4fun\Admin\Grid\Column;
+use Code4fun\Admin\Grid\Displayers\Actions;
+use Code4fun\Admin\Grid\Displayers\RowSelector;
+use Code4fun\Admin\Grid\Exporter;
+use Code4fun\Admin\Grid\Filter;
+use Code4fun\Admin\Grid\Model;
+use Code4fun\Admin\Grid\Row;
+use Code4fun\Admin\Grid\Tools;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -29,7 +29,7 @@ class Grid
     /**
      * The grid data model instance.
      *
-     * @var \CODE4FUN\Admin\Grid\Model
+     * @var \Code4fun\Admin\Grid\Model
      */
     protected $model;
 
@@ -92,7 +92,7 @@ class Grid
     /**
      * The grid Filter.
      *
-     * @var \CODE4FUN\Admin\Grid\Filter
+     * @var \Code4fun\Admin\Grid\Filter
      */
     protected $filter;
 
@@ -881,19 +881,19 @@ class Grid
     public static function registerColumnDisplayer()
     {
         $map = [
-            'editable'      => \CODE4FUN\Admin\Grid\Displayers\Editable::class,
-            'switch'        => \CODE4FUN\Admin\Grid\Displayers\SwitchDisplay::class,
-            'switchGroup'   => \CODE4FUN\Admin\Grid\Displayers\SwitchGroup::class,
-            'select'        => \CODE4FUN\Admin\Grid\Displayers\Select::class,
-            'image'         => \CODE4FUN\Admin\Grid\Displayers\Image::class,
-            'label'         => \CODE4FUN\Admin\Grid\Displayers\Label::class,
-            'button'        => \CODE4FUN\Admin\Grid\Displayers\Button::class,
-            'link'          => \CODE4FUN\Admin\Grid\Displayers\Link::class,
-            'badge'         => \CODE4FUN\Admin\Grid\Displayers\Badge::class,
-            'progressBar'   => \CODE4FUN\Admin\Grid\Displayers\ProgressBar::class,
-            'radio'         => \CODE4FUN\Admin\Grid\Displayers\Radio::class,
-            'checkbox'      => \CODE4FUN\Admin\Grid\Displayers\Checkbox::class,
-            'orderable'     => \CODE4FUN\Admin\Grid\Displayers\Orderable::class,
+            'editable'      => \Code4fun\Admin\Grid\Displayers\Editable::class,
+            'switch'        => \Code4fun\Admin\Grid\Displayers\SwitchDisplay::class,
+            'switchGroup'   => \Code4fun\Admin\Grid\Displayers\SwitchGroup::class,
+            'select'        => \Code4fun\Admin\Grid\Displayers\Select::class,
+            'image'         => \Code4fun\Admin\Grid\Displayers\Image::class,
+            'label'         => \Code4fun\Admin\Grid\Displayers\Label::class,
+            'button'        => \Code4fun\Admin\Grid\Displayers\Button::class,
+            'link'          => \Code4fun\Admin\Grid\Displayers\Link::class,
+            'badge'         => \Code4fun\Admin\Grid\Displayers\Badge::class,
+            'progressBar'   => \Code4fun\Admin\Grid\Displayers\ProgressBar::class,
+            'radio'         => \Code4fun\Admin\Grid\Displayers\Radio::class,
+            'checkbox'      => \Code4fun\Admin\Grid\Displayers\Checkbox::class,
+            'orderable'     => \Code4fun\Admin\Grid\Displayers\Orderable::class,
         ];
 
         foreach ($map as $abstract => $class) {

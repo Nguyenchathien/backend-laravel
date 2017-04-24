@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin\Middleware;
+namespace Code4fun\Admin\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;

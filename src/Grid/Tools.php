@@ -1,11 +1,11 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid;
+namespace Code4fun\Admin\Grid;
 
-use CODE4FUN\Admin\Grid;
-use CODE4FUN\Admin\Grid\Tools\AbstractTool;
-use CODE4FUN\Admin\Grid\Tools\BatchActions;
-use CODE4FUN\Admin\Grid\Tools\RefreshButton;
+use Code4fun\Admin\Grid;
+use Code4fun\Admin\Grid\Tools\AbstractTool;
+use Code4fun\Admin\Grid\Tools\BatchActions;
+use Code4fun\Admin\Grid\Tools\RefreshButton;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
 

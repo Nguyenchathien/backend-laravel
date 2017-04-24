@@ -1,8 +1,8 @@
 <?php
 
-namespace CODE4FUN\Admin\Commands;
+namespace Code4fun\Admin\Commands;
 
-use CODE4FUN\Admin\Facades\Admin;
+use Code4fun\Admin\Facades\Admin;
 use Illuminate\Console\Command;
 
 class MenuCommand extends Command

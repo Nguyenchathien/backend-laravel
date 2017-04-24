@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid;
+namespace Code4fun\Admin\Grid;
 
 class Row
 {

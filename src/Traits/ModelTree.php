@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin\Traits;
+namespace Code4fun\Admin\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;

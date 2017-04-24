@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin\Scaffold;
+namespace Code4fun\Admin\Scaffold;
 
 use Illuminate\Database\Migrations\MigrationCreator as BaseMigrationCreator;
 

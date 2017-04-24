@@ -1,8 +1,8 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid\Tools;
+namespace Code4fun\Admin\Grid\Tools;
 
-use CODE4FUN\Admin\Grid;
+use Code4fun\Admin\Grid;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Input;
 

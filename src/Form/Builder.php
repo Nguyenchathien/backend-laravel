@@ -1,9 +1,9 @@
 <?php
 
-namespace CODE4FUN\Admin\Form;
+namespace Code4fun\Admin\Form;
 
-use CODE4FUN\Admin\Admin;
-use CODE4FUN\Admin\Form;
+use Code4fun\Admin\Admin;
+use Code4fun\Admin\Form;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;

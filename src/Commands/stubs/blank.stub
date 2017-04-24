@@ -3,7 +3,7 @@
 namespace DummyNamespace;
 
 use App\Http\Controllers\Controller;
-use CODE4FUN\Admin\Controllers\ModelForm;
+use Code4fun\Admin\Controllers\ModelForm;
 
 class DummyClass extends Controller
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid\Tools;
+namespace Code4fun\Admin\Grid\Tools;
 
-use CODE4FUN\Admin\Admin;
+use Code4fun\Admin\Admin;
 use Illuminate\Support\Collection;
 
 class BatchActions extends AbstractTool

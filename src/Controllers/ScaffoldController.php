@@ -1,12 +1,12 @@
 <?php
 
-namespace CODE4FUN\Admin\Controllers;
+namespace Code4fun\Admin\Controllers;
 
-use CODE4FUN\Admin\Facades\Admin;
-use CODE4FUN\Admin\Layout\Content;
-use CODE4FUN\Admin\Scaffold\ControllerCreator;
-use CODE4FUN\Admin\Scaffold\MigrationCreator;
-use CODE4FUN\Admin\Scaffold\ModelCreator;
+use Code4fun\Admin\Facades\Admin;
+use Code4fun\Admin\Layout\Content;
+use Code4fun\Admin\Scaffold\ControllerCreator;
+use Code4fun\Admin\Scaffold\MigrationCreator;
+use Code4fun\Admin\Scaffold\ModelCreator;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Artisan;

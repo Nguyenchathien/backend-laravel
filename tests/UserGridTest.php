@@ -1,6 +1,6 @@
 <?php
 
-use CODE4FUN\Admin\Auth\Database\Administrator;
+use Code4fun\Admin\Auth\Database\Administrator;
 use Tests\Models\Profile as ProfileModel;
 use Tests\Models\User as UserModel;
 

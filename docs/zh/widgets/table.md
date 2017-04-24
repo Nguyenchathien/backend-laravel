@@ -1,9 +1,9 @@
 # Table
 
-`CODE4FUN\Admin\Widgets\Table`类用来生成表格：
+`Code4fun\Admin\Widgets\Table`类用来生成表格：
 
 ```php
-use CODE4FUN\Admin\Widgets\Table;
+use Code4fun\Admin\Widgets\Table;
 
 // table 1
 $headers = ['Id', 'Email', 'Name', 'Company'];

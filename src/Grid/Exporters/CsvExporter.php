@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin\Grid\Exporters;
+namespace Code4fun\Admin\Grid\Exporters;
 
 use Illuminate\Support\Arr;
 

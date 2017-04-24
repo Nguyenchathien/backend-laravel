@@ -1,6 +1,6 @@
 # 表单
 
-`CODE4FUN\Admin\Widgets\Form`类用来快速构建表单：
+`Code4fun\Admin\Widgets\Form`类用来快速构建表单：
 
 ```php
 

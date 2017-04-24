@@ -1,6 +1,6 @@
 <?php
 
-namespace CODE4FUN\Admin\Commands;
+namespace Code4fun\Admin\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputArgument;

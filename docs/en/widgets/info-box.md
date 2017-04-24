@@ -1,9 +1,9 @@
 # Infobox
 
-The `CODE4FUN\Admin\Widgets\InfoBox` class is used to generate the information presentation block:
+The `Code4fun\Admin\Widgets\InfoBox` class is used to generate the information presentation block:
 
 ```php
-use CODE4FUN\Admin\Widgets\InfoBox;
+use Code4fun\Admin\Widgets\InfoBox;
 
 $infoBox = new InfoBox('New Users', 'users', 'aqua', '/admin/users', '1024');
 

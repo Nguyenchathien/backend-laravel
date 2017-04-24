@@ -3,21 +3,21 @@
 namespace DummyNamespace;
 
 use App\Http\Controllers\Controller;
-use CODE4FUN\Admin\Facades\Admin;
-use CODE4FUN\Admin\Layout\Column;
-use CODE4FUN\Admin\Layout\Content;
-use CODE4FUN\Admin\Layout\Row;
-use CODE4FUN\Admin\Widgets\Box;
-use CODE4FUN\Admin\Widgets\Chart\Bar;
-use CODE4FUN\Admin\Widgets\Chart\Doughnut;
-use CODE4FUN\Admin\Widgets\Chart\Line;
-use CODE4FUN\Admin\Widgets\Chart\Pie;
-use CODE4FUN\Admin\Widgets\Chart\PolarArea;
-use CODE4FUN\Admin\Widgets\Chart\Radar;
-use CODE4FUN\Admin\Widgets\Collapse;
-use CODE4FUN\Admin\Widgets\InfoBox;
-use CODE4FUN\Admin\Widgets\Tab;
-use CODE4FUN\Admin\Widgets\Table;
+use Code4fun\Admin\Facades\Admin;
+use Code4fun\Admin\Layout\Column;
+use Code4fun\Admin\Layout\Content;
+use Code4fun\Admin\Layout\Row;
+use Code4fun\Admin\Widgets\Box;
+use Code4fun\Admin\Widgets\Chart\Bar;
+use Code4fun\Admin\Widgets\Chart\Doughnut;
+use Code4fun\Admin\Widgets\Chart\Line;
+use Code4fun\Admin\Widgets\Chart\Pie;
+use Code4fun\Admin\Widgets\Chart\PolarArea;
+use Code4fun\Admin\Widgets\Chart\Radar;
+use Code4fun\Admin\Widgets\Collapse;
+use Code4fun\Admin\Widgets\InfoBox;
+use Code4fun\Admin\Widgets\Tab;
+use Code4fun\Admin\Widgets\Table;
 
 class HomeController extends Controller
 {
